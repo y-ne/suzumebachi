@@ -37,6 +37,8 @@ uci commit dhcp
 
 ### Wireless thingy
 
+NOTE : please check the `radio0` and `radio1` first, with `uci show wireless | grep band` so they didn't get mixed up.
+
 ```bash
 # 2.4 g (MT7603)
 uci set wireless.radio0.disabled='0'
